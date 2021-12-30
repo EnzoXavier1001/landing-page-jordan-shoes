@@ -29,6 +29,7 @@ body {
 .header-showcase {
   background: url('img/banner.svg');
   background-size: cover;
+  background-position: center;
   height: 378px;
   position: relative;
   z-index: 10;
@@ -76,6 +77,8 @@ body {
 /*========= MAIN ============ */
 main {
   padding: 58px 0 100px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .main-header {
@@ -98,7 +101,6 @@ main {
   gap: 30px 13px;
   flex-wrap: wrap;
   max-width: 1120px;
-  width: 90%;
   margin: 0 auto;
   justify-content: center;
 }
@@ -106,6 +108,13 @@ main {
 .shoes {
   background: #ebe9ea;
   padding: 25px 10px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.shoes:hover {
+  transform: scale(0.8);
+  cursor: pointer;
 }
 
 /*========= FOOTER ============ */
@@ -130,5 +139,9 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .header-showcase-content p {
+    max-width: none;
   }
 }
